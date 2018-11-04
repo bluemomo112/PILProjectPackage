@@ -68,6 +68,7 @@ def draw_moving_thing(folderName,start,end,contentName,emoiSize=(50,50),textSize
 
 		#读取所有底层图片
 		for i in range(start, end):
+			print(i)
 			img = Image.open(folderName+"/"+picList[i])
 			picSize = img.size
 
@@ -119,7 +120,7 @@ def main():
 	# m2p.main()
 	textList = ['疯狂为博士打call', "哈哈哈哈哈哈", "博士好棒棒", "6666666666666", '为大佬献上膝盖！', '前方高能', "我们爱夏博士"]
 	# draw_moving_thing("imageFolder",0,10,"assets/01.jpg")
-	draw_moving_thing("imageFolder", 0, 10, textList)
+	draw_moving_thing("imageFolder", 0, 9, textList)
 
 if __name__=="__main__":
 	main()
